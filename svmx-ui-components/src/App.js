@@ -14,6 +14,7 @@ import ListView from './components/list/ListView';
 import Toggle from './components/toggle/Toggle';
 import BrandingBar from './components/branding/BrandingBar';
 import Table from './components/table/Table';
+import Dropdown from './components/Dropdown/Dropdown';
 
 import './theme/css/style.css';
 
@@ -71,6 +72,10 @@ class App extends Component {
         <FlexBox>
           <BasicForm />
           <Box><ListView /></Box>
+
+            <Dropdown items={[{key:'none', value:''},{key:"title", value: "Title"},{key:"subtitle", value: "Subtitle"},{key:"severity", value: "Severity"},{key:"date", value: "Date"}]}
+              selected='date'/>
+
         </FlexBox>
         <Table />
       </div>

@@ -18,7 +18,7 @@ class ListView extends Component {
         <div className="flex flex--justify flex--middle u-ph u-pb shadow-navigation">
           <div className="flex flex--row flex--middle">
             <span className="label u-mr--">Sort by</span>
-            <OptionList items={[{key:"Title", value: "Title"},{key:"Subtitle", value: "Subtitle"},{key:"Severity", value: "Severity"},{key:"Date", value: "Date"}]}/>
+            <OptionList items={[{key:"title", value: "Title"},{key:"subtitle", value: "Subtitle"},{key:"severity", value: "Severity"},{key:"Date", value: "Date"}]}/>
           </div>
         </div>
 
