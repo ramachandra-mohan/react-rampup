@@ -1,0 +1,101 @@
+<!--
+    Relative paths assume component is being run from inside an app or another component, where dependencies are flat
+    siblings. When this component is run from its own repo (e.g. tests, examples), we assume the server is started with
+    'grunt depserve' (or similar server setup) to enable correct finding of bower dependencies for local runs.
+-->
+<link rel="import" href="../polymer/polymer.html"/>
+
+
+<!--
+
+### Usage
+
+    <px-progress-bar value="50"></px-progress-bar>
+
+### Styling
+The following custom properties and mixins are also available for styling:
+
+Custom property | Description | Default
+----------------|-------------|----------
+`--px-progress-bar-height` | Height of the progress bar element | `5px`
+`--px-progress-bar-fill-color` | Color of the filled portion of the bar | black
+`--px-progress-bar-background-color` | Color of the unfilled portion of the bar | lightgray
+
+@element px-progress-bar
+@blurb Element providing a progress bar.
+@homepage index.html
+@demo demo.html
+
+-->
+
+<link rel="import" href="css/px-progress-bar-styles.html">
+
+<dom-module id="px-progress-bar">
+  <template>
+    <style include="px-progress-bar-styles"></style>
+
+    <div id="background" class="background">
+      <div id="fill" class="fill">
+      </div>
+    </div>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+
+    is: 'px-progress-bar',
+
+    properties: {
+      /**
+       * Represents the value (from 0 to 100) of the percentage progress.
+       */
+      value: {
+        type: Number,
+        value: 0,
+        notify: true,
+        observer: '_updateProgress'
+      },
+      /**
+       * Internal property for calculating the ratio (from 0 to 1) for sizing
+       * elements within the component - also clips negative values and values
+       * greater than 100 in its compute function.
+       */
+      _ratio: {
+        type: Number,
+        computed: '_computeRatio(value)'
+      },
+      /**
+       * Flag for whether to animate the progress bar. Set to true for an
+       * indeterminate or infinite progress bar.
+       */
+      infinite: {
+        type: Boolean,
+        value: false,
+        reflectToAttribute: true,
+        observer: 'ready'
+      }
+    },
+     /**
+     * Function to transform the filled portion of the progress bar.
+     */
+    _updateProgress: function() {
+      var transform = 'scaleX(' + this._ratio + ')';
+      this.$.fill.style.transform = this.$.fill.style.webkitTransform = transform;
+      this.setAttribute('aria-valuenow',this.value);
+    },
+    /**
+    * Function to compute the ratio based on the value.
+    * Also clips values that are out of range (0 to 100).
+    */
+    _computeRatio: function(value) {
+      return value < 0 ? 0 : (value > 100 ? 1 : value / 100);
+    },
+    attached: function() {
+      this.setAttribute('role','progressbar');
+      this.setAttribute('aria-valuemin','0');
+      this.setAttribute('aria-valuemax','100');
+    }
+
+  });
+</script>

@@ -1,0 +1,70 @@
+                  // Settings
+                 @import "px-defaults-design/_settings.defaults.scss";
+                 @import "px-colors-design/_settings.colors.scss";
+                 @import "inuit-responsive-settings/_settings.responsive.scss";
+
+                 // Tools
+                  @import "px-functions-design/_tools.functions.scss";
+                  @import "px-mixins-design/_tools.mixins.scss";
+                  @import "inuit-responsive-tools/_tools.responsive.scss";
+
+                  // Generic
+                  @import "px-normalize-design/_generic.normalize.scss";
+
+                  $intuit-global-border-box : true;
+                  @import "px-box-sizing-design/_generic.box-sizing.scss";
+                  @import "px-helpers-design/_generic.helpers.scss";
+
+                  // Base
+                  @import "px-viewport-design/_base.viewport.scss";
+                  @import "px-typography-design/_base.typography.scss";
+
+                  $inuit-enable-input--regular : true;
+                  @import 'px-forms-design/_base.forms.scss';
+                  @import "px-tables-design/_base.tables.scss";
+
+                  // Meta
+                  @import "px-meta-lists-design/_meta.lists.scss";
+
+                  // Objects
+
+                  $inuit-enable-btn--bare: true;
+                  $inuit-enable-btn--primary: true;
+                  $inuit-enable-btn--tertiary: true;
+                  $inuit-enable-btn--icon: true;
+                  $inuit-enable-btn--disabled: true;
+                  $inuit-enable-btn--full : true;
+                  $inuit-enable-btn--call-to-action : true;
+                  @import "px-buttons-design/_objects.buttons.scss";
+
+                  $actionable: true;
+                  $actionable--select: true;
+                  $actionable--action: true;
+                  $actionable--disabled: true;
+                  $actionable--small: true;
+                  $actionable--large: true;
+                  $actionable--huge: true;
+                  @import 'px-actionable-design/_objects.actionable.scss';
+
+                   $inuit-enable-layout--tiny: true;
+                   $inuit-enable-layout--small: true;
+                   $inuit-enable-layout--large: true;
+                   $inuit-enable-layout--huge: true;
+                   $inuit-enable-layout--flush: true;
+
+                   @import "px-layout-design/_objects.layout.scss";
+                   @import "px-box-design/_objects.box.scss";
+
+                  // Components
+
+                  // Trumps
+                  $inuit-widths-columns : [1,2,3,4,5,6,7,8,9,10,11,12];
+                  @import "px-widths-responsive-design/_trumps.widths-responsive.scss";
+                  $inuit-enable-margins : true;
+                  $inuit-enable-paddings : true;
+                  @import "px-spacing-design/_trumps.spacing.scss";
+                  @import "px-spacing-responsive-design/_trumps.spacing-responsive.scss";
+                  @import "px-clearfix-design/_trumps.clearfix.scss";
+
+                  //custom
+                  @import 'px-flexbox-design/_base.flexbox.scss';

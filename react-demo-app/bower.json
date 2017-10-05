@@ -1,0 +1,16 @@
+{
+  "name": "react-demo-app",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ramachandra Mohan <ramachandra.mohan@servicemax.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "px-spinner": "^2.1.0",
+    "px-list-ui-design": "^2.0.2",
+    "px-list-inline-design": "^1.0.2"
+  }
+}

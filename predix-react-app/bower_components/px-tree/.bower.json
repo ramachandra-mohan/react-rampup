@@ -1,0 +1,52 @@
+{
+  "name": "px-tree",
+  "version": "2.0.3",
+  "main": [
+    "px-tree.html"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "gulpfile.js",
+    "sass",
+    "bower_components",
+    "node_modules",
+    "test",
+    "OSS_Notice.pdf",
+    "scripts",
+    ".github",
+    "px-tree.png",
+    "LICENSE.md",
+    "CONTRIBUTING.md",
+    "HISTORY.md",
+    "README.md",
+    ".jshintrc",
+    ".editorconfig",
+    "polymer.json"
+  ],
+  "dependencies": {
+    "polymer": "^1.9.0",
+    "px-icon-set": "^2.0.0",
+    "px-app-helpers": "^1.0.0",
+    "iron-collapse": "^2.0.0"
+  },
+  "devDependencies": {
+    "px-theme": "^3.0.0",
+    "px-demo": "^2.0.0",
+    "web-component-tester": "^6.0.0"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^0.7.24"
+  },
+  "homepage": "https://github.com/PredixDev/px-tree",
+  "_release": "2.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.3",
+    "commit": "423d6a569ddd3e4bc05ee4d852717eef97278caf"
+  },
+  "_source": "https://github.com/PredixDev/px-tree.git",
+  "_target": "^2.0.3",
+  "_originalSource": "px-tree",
+  "_direct": true
+}

@@ -1,0 +1,50 @@
+{
+  "name": "px-progress-bar",
+  "version": "1.0.3",
+  "main": [
+    "px-progress-bar.html"
+  ],
+  "ignore": [
+    "*.enc",
+    ".*",
+    "node_modules",
+    "bower_components",
+    "sass",
+    "HISTORY.md",
+    "CONTRIBUTING.md",
+    "OSS_Notice.pdf",
+    "scripts",
+    ".github",
+    ".editorconfig",
+    ".jshintrc",
+    ".gitignore",
+    "LICENSE.md",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "README.md",
+    "wct.conf.json",
+    "px-progress-bar.png"
+  ],
+  "dependencies": {
+    "polymer": "^1.9.0",
+    "px-theme": "^3.0.0"
+  },
+  "devDependencies": {
+    "px-starter-kit-design": "^1.0.0",
+    "px-demo": "^2.0.0"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^0.7.24"
+  },
+  "homepage": "https://github.com/PredixDev/px-progress-bar",
+  "_release": "1.0.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.3",
+    "commit": "bd03cd2a93b1efae0ca8a29ae88693d2834c785f"
+  },
+  "_source": "https://github.com/PredixDev/px-progress-bar.git",
+  "_target": "^1.0.3",
+  "_originalSource": "px-progress-bar",
+  "_direct": true
+}

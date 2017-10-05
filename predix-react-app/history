@@ -1,0 +1,500 @@
+  169  cd ..
+  170  cp ~/Downloads/git/max-groovy-sources/src/main/java/com/servicemax/fservice/dc/v2/service/DispatchConsoleService.groovy src/main/java/com/servicemax/fservice/dc/v2/service/DispatchConsoleService.groovy 
+  171  git status
+  172  ls
+  173  git checkout src/main/java/com/servicemax/fservice/dc/v2/service/DispatchConsoleService.groovy
+  174  git status
+  175  cp ~/Downloads/git/max-groovy-sources/src/main/java/com/servicemax/fservice/dc/v2/service/DispatchConsoleService.groovy src/main/java/com/servicemax/fservice/dc/v2/service/DispatchConsoleService.groovy 
+  176  git status
+  177  rm -dfr elasticsearch-data/
+  178  ls
+  179  git status
+  180  git add .
+  181  git commit -m "Service to calculate recommended resource for given job"
+  182  git push origin XDC-715
+  183  ls
+  184  git status
+  185  git checkout master
+  186  git branch
+  187  ./tools/update_from_master.sh 
+  188  gti status
+  189  git status
+  190  git checkout src/main/java/com/servicemax/fservice/struct/Job.groovy
+  191  git status
+  192  git status
+  193  rm -dfr elasticsearch-data/
+  194  git status
+  195  git add .
+  196  git commit -m "Updated latitude/longitude datatype to String"
+  197  git push origin XDC-718
+  198  ./tools/update_from_master.sh 
+  199  git status
+  200  git checkout master
+  201  git status
+  202  git branch
+  203  ./tools/update_from_master.sh 
+  204  cd tools/
+  205  ./setup_databases.sh 
+  206  ./load_local_app_database.sh 
+  207  ./load_local_test_database.sh 
+  208  cd ..
+  209  ls
+  210  git status
+  211  git push origin master
+  212  git status
+  213  git status
+  214  git status
+  215  rm -dfr elasticsearch-data/
+  216  git add .
+  217  git commit -m "Updated code to support crew in response"
+  218  git push origin XDC-719
+  219  git push origin +XDC-719
+  220  git checkout master
+  221  ./tools/update_from_master.sh 
+  222  git checkout XDC-719
+  223  ls
+  224  zip -r src.zip src
+  225  ls
+  226  mv src.zip ../src.zip 
+  227  git status
+  228  git checkout master
+  229  git checkout master
+  230  ./tools/update_from_master.sh 
+  231  ./tools/update_from_master.sh 
+  232  ./tools/update_from_master.sh 
+  233  cd tools/
+  234  ./setup_databases.sh 
+  235  ./load_local_app_database.sh 
+  236  ./load_local_test_database.sh 
+  237  cd -
+  238  ./tools/update_from_master.sh 
+  239  git checkout
+  240  git status
+  241  git checkout src/main/java/com/servicemax/fservice/dc/v2/service/DispatchConsoleService.groovy src/main/java/com/servicemax/fservice/service/JobService.groovy
+  242  git status
+  243  ./tools/update_from_master.sh 
+  244  ./tools/update_from_master.sh 
+  245  ./tools/update_from_master.sh 
+  246  git branch
+  247  git status
+  248  rm -dfr elasticsearch-data/
+  249  git status
+  250  git status
+  251  rm -dfr elasticsearch-data/
+  252  git status
+  253  git add .
+  254  git commit -m "Added additional null check before getting field value"
+  255  git push origin XDC-720
+  256  ./tools/update_from_master.sh 
+  257  git status
+  258  rm -dfr elasticsearch-data/
+  259  git status
+  260  git add .
+  261  git commit -m "Service to get recommended crews."
+  262  git push origin XDC-721
+  263  git status
+  264  git add .
+  265  git commit --amend
+  266  git push origin +XDC-721
+  267  git status
+  268  git checkout master
+  269  ./tools/update_from_master.sh 
+  270  ./tools/update_from_master.sh 
+  271  git status
+  272  git status
+  273  rm -dfr elasticsearch-data
+  274  git status
+  275  git add .
+  276  git commit -m "Crew leader assignement fix in save crew resource service"
+  277  git push origin XDC-726
+  278  git status
+  279  git status
+  280  git checkout master
+  281  ./tools/update_from_master.sh 
+  282  git branch
+  283  git status
+  284  rm -dfr elasticsearch-data
+  285  ls
+  286  git status
+  287  git add .
+  288  git commit -m "Support for resource to crew job reassign"
+  289  git push origin XDC-727
+  290  git status
+  291  git add .
+  292  git commit --amend
+  293  git push origin XDC-727
+  294  git push origin +XDC-727
+  295  git add .
+  296  git commit --amend
+  297  git push origin +XDC-727
+  298  git status
+  299  git checkout master
+  300  ./tools/update_from_master.sh 
+  301  git checkout XDC-727
+  302  git branch
+  303  git status
+  304  git checkout src/test/java/com/servicemax/fservice/service/EventServiceTest.groovy
+  305  git status
+  306  git checkout master
+  307  ./tools/update_from_master.sh 
+  308  git status
+  309  rm -dfr elasticsearch-data
+  310  git status
+  311  git status
+  312  git add .
+  313  git commit -m "Change job status to New on event unschedule"
+  314  git push origin XDC-729
+  315  git status
+  316  git checkout master
+  317  ./tools/update_from_master.sh 
+  318  cd tools/
+  319  ./setup_databases.sh 
+  320  ls
+  321  ./load_local_app_database.sh 
+  322  ./load_local_test_database.sh 
+  323  cd ..
+  324  ./tools/update_from_master.sh 
+  325  ./tools/update_from_master.sh 
+  326  git push origin master
+  327  git status
+  328  git status
+  329  git status
+  330  git status
+  331  git status
+  332  git status
+  333  git add src/main/java/com/servicemax/fservice/struct/Job.groovy src/test/java/com/servicemax/fservice/service/JobServiceTest.groovy
+  334  git commit -m "Updated code to support skills in job"
+  335  git push origin XDC-736
+  336  git status
+  337  git add src/main/java/com/servicemax/fservice/struct/Job.groovy
+  338  git status
+  339  git commit --amand
+  340  git commit --amend
+  341  git push origin +XDC-736
+  342  git status
+  343  git status
+  344  git status
+  345  git status
+  346  git branch
+  347  git status
+  348  rm elasticsearch-data
+  349  rm -dfr elasticsearch-data
+  350  git status
+  351  git add .
+  352  git commit -m "Event handler implementation to populate latitude and longitude using platform geocode API"
+  353  git push origin XDC-735
+  354  ./tools/update_from_master.sh 
+  355  ./tools/update_from_master.sh 
+  356  ./tools/update_from_master.sh 
+  357  git branch
+  358  ./tools/update_from_master.sh 
+  359  git status
+  360  rm -dfr elasticsearch-data
+  361  ls
+  362  git status
+  363  git add .
+  364  git commit -maend
+  365  git commit -amand
+  366  git commit -amend
+  367  git commit --amand
+  368  git commit --amend
+  369  git push origin +XDC-735
+  370  git commit --amend
+  371  git push origin +XDC-735
+  372  git rebase HEAD^2
+  373  git rebase HEAD~2
+  374  GIT STATUS
+  375  git status
+  376  git checkout pom.xml
+  377  git rebase HEAD~2
+  378  exit
+  379  node server.js 
+  380  node server.js 
+  381  node server.js 
+  382  node server.js 
+  383  netstat -na | grep 5432
+  384  netstat -na | grep 7070
+  385  node server.js 
+  386  pwd
+  387  ls
+  388  node server.js 
+  389  rm -dfr *
+  390  unzip ~/Downloads/neocore-oauth.zip 
+  391  node server.js 
+  392  node server.js 
+  393  vi version
+  394  rm -dfr *
+  395  unzip ~/Downloads/neocore-oauth.zip 
+  396  node server.js 
+  397  vi version
+  398  rm -dfr *
+  399  unzip ~/Downloads/neocore-oauth\ \(1\).zip 
+  400  node server.js 
+  401  node --version
+  402  node server.js 
+  403  vi version
+  404  node server.js 
+  405  npm install scrypt@6.0.3
+  406  node server.js 
+  407  node server.js 
+  408  node server.js 
+  409  node server.js 
+  410  node server.js 
+  411  node server.js 
+  412  node server.js 
+  413  node server.js 
+  414  exit
+  415  ls
+  416  cd hydra/ls
+  417  cd hydra/
+  418  ls
+  419  cd launch/
+  420  mv ~/Downloads/GroovyDatabaseTest.launch GroovyDatabaseTest.launch 
+  421  cd ..
+  422  ls
+  423  git config --global user.email "ramachandra.mohan@servicemax.com"
+  424  pg_ctl -D ./postgres restart
+  425  groovyscan 
+  426  ls
+  427  cd ..
+  428  ls
+  429  pg_ctl -D ./postgres restart
+  430  groovyscan 
+  431  df
+  432  df -sh
+  433  df -sH
+  434  df -h
+  435  df -H
+  436  groovyscan 
+  437  groovyscan 
+  438  groovyscan 
+  439  cd ../
+  440  ls
+  441  zip getRecommendResources.zip git/max-groovy-sources/src/main/java/com/servicemax/fservice/dc/v2/service/DispatchConsoleService.groovy git/max-groovy-sources/src/main/java/com/servicemax/fservice/struct/Resource.groovy
+  442  ls
+  443  groovyscan 
+  444  groovyscan 
+  445  groovyscan 
+  446  groovyscan 
+  447  groovyscan 
+  448  groovyscan 
+  449  groovyscan 
+  450  ping google.com
+  451  groovyscan 
+  452  groovyscan 
+  453  groovyscan 
+  454  groovyscan 
+  455  groovyscan 
+  456  groovyscan 
+  457  groovyscan 
+  458  groovyscan 
+  459  groovyscan 
+  460  groovyscan 
+  461  groovyscan 
+  462  groovyscan 
+  463  exit
+  464  cd
+  465  ls
+  466  mv ~/Downloads/metabase.jar .
+  467  ls
+  468  java -jar metabase.jar 
+  469  exit
+  470  npm test
+  471  npm test -- --coverage
+  472  npm test -- --coverage
+  473  npm test
+  474  npm test
+  475  npm test
+  476  scp root@45.79.68.106:capture.pcap .
+  477  ls
+  478  scp root@45.79.68.106:capture.pcap .
+  479  ls
+  480  scp JDBCExample.java root@45.79.68.106:
+  481  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  482  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  483  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  484  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  485  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  486  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  487  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  488  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  489  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  490  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  491  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  492  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  493  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  494  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  495  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  496  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  497  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  498  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  499  scp JDBCExample.java root@45.79.68.106:./retrieve_email/
+  500  exit
+  501  npm start
+  502  node --version
+  503  node -l
+  504  node list
+  505  node --list
+  506  node --l
+  507  node -list
+  508  node use
+  509  nvm ls available
+  510  node -n
+  511  node n
+  512  node install
+  513  n latest
+  514  sude n latest
+  515  sudo n latest
+  516  node --version
+  517  n 8.5.0
+  518  n
+  519  n
+  520  n
+  521  npm start
+  522  nom install
+  523  npm install
+  524  npm stare
+  525  npm start
+  526  npm i -g npm
+  527  npm -v
+  528  node -v
+  529  nvm ls
+  530  nvm use v8.5.0
+  531  node -v
+  532  npm start
+  533  npm start
+  534  ls
+  535  cd ..
+  536  ls
+  537  cd svmx-ui-components/
+  538  npm start
+  539  cd ../predix-on-react/
+  540  npm start
+  541  ln -s bower_components public/bower_components
+  542  ls public/
+  543  npm start
+  544  npm start
+  545  vi /Users/ramachandra/.npm/_logs/2017-09-27T06_34_00_300Z-debug.log
+  546  ls
+  547  npm start
+  548  npm start
+  549  cd public/
+  550  ls
+  551  unlink bower_components
+  552  ls
+  553  xs ..
+  554  ls
+  555  cd ..
+  556  ls
+  557  bower install polymer
+  558  ls 
+  559  ln -s bower_components public/bower_components
+  560  npm start
+  561  cd public/
+  562  unlink bower_components
+  563  cd ..
+  564  ls
+  565  npm start
+  566  bower install px-alert-label
+  567  npm start
+  568  bower install polymer --save
+  569  bower install px-alert-label --save
+  570  npm start
+  571  bower install px-starter-kit-design --save
+  572  gem install sass
+  573  sudo gem install sass
+  574  sass --watch bower_components/predix.scss:public/predix.css
+  575  bg
+  576  nmm start
+  577  npm start
+  578  fg
+  579  sass --watch bower_components/predix.scss:src/predix.css
+  580  bg
+  581  npm start
+  582  fg
+  583  sass --watch bower_components/predix.scss:src/predix.css
+  584  sass --watch bower_components/predix.scss:src/predix.css&
+  585  npm start
+  586  fg
+  587  npm start
+  588  npm start
+  589  d ,,
+  590  cd ..
+  591  ls
+  592  rm -dfr predix-on-react
+  593  unzip ~/Downloads/predix-react-app.zip 
+  594  ls
+  595  cd predix-react-app/
+  596  ls
+  597  ls public/
+  598  ls -l public/
+  599  npm start
+  600  sass --watch bower_components/predix.scss:src/css/predix.css
+  601  mv bower_components/app.scss predix.scss
+  602  sass --watch bower_components/predix.scss:src/css/predix.css
+  603  ls bower_components/
+  604  mv predix.scss bower_components/
+  605  sass --watch bower_components/predix.scss:src/css/predix.css
+  606  bg
+  607  npm start
+  608  npm start
+  609  fg
+  610  npm start
+  611  bower install px-spinner --save
+  612  npm start
+  613  bower install px-tree --save
+  614  npm start
+  615  bower install px-flexbox-design
+  616  bower install px-flexbox-design --save
+  617  npm start
+  618  npm start
+  619  npm start
+  620  bower install px-alert-message --save
+  621  npm start
+  622  npm start
+  623  bower install px-app-nav
+  624  bower install px-app-nav --save
+  625  npm start
+  626  bower install px-map --save
+  627  npm start
+  628  bower install px-inbox --save
+  629  npm start
+  630  npm start
+  631  npm i -g np
+  632  npm i -g npM
+  633  npm i -g npm
+  634  npm install px-card --save
+  635  npm i -g npm
+  636  npm install px-card --save
+  637  npm install px-layout --save
+  638  npm install px-cards --save
+  639  npm install px-card --save
+  640  npm install px-card-layout --save
+  641  npm start
+  642  npm install px-theme --save
+  643  npm start
+  644  npm install px-calendar-picker --save
+  645  npm install px-range-panel --save
+  646  npm install px-datetime-components --save
+  647  npm install px-calendar-picker --save
+  648  bower install px-calendar-picker --save
+  649  npm start
+  650  bower install px-datetime-field --save
+  651  npm start
+  652  bower install px-datetime-picker --save
+  653  npm start
+  654  bower install px-progress-bar --save
+  655  npm start
+  656  bower install px-toggle --save
+  657  npm start
+  658  bower install px-model --save
+  659  bower install px-modal --save
+  660  npm start
+  661  bower install px-typeahead --save
+  662  npm start
+  663  bower install px-validation --save
+  664  npm start
+  665  bower install px-context-browser --save
+  666  npm start
+  667  history 
+  668  history > history
