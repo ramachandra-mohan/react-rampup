@@ -37,16 +37,12 @@ class GridLayout extends PureComponent {
   constructor(props) {
     super(props);
 
-    console.debug( 'GridLayout::constructor(props) : props=',  props );
-
     /*
      * Initializing state with gutter, alignment and vertical properties.
      */
     this.state = {
       gutter: props.gutter, alignment: props.alignment, vertical: props.vertical
     }
-
-    console.info( 'GridLayout::constructor(props) : state=', this.state );
   }
 
   /**
@@ -54,25 +50,17 @@ class GridLayout extends PureComponent {
    */
   get _style() {
 
-    console.debug( 'GridLayout::_style() - enter' );
-
     let gutter = GridLayout._gutters[this.state.gutter];
     let vertical = GridLayout._verticals[this.state.vertical];
     let alignment = GridLayout._alignments[this.state.alignment];
 
-    let style = `layout ${alignment} ${vertical} ${gutter}`.trim();
-
-    console.info( 'GridLayout::_style() : style=', style );
-    console.debug( 'GridLayout::_style() - exit' );
-
-    return style;
+    return `layout ${alignment} ${vertical} ${gutter}`.trim();
   }
 
   /**
    * Render method to return grid layout component with configured style.
    */
   render() {
-    console.debug( 'GridLayout::render()' );
     return (
       <div className={this._style}>
         {this.props.children}
