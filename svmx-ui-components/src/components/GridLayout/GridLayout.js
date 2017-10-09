@@ -5,7 +5,7 @@
  * reflow responsively on smaller viewports.
  *
  * Eg.
- * <GridLayout gutters='large' alignment='center' vertical='middle'>
+ * <GridLayout gutter='large' alignment='center' vertical='middle'>
  *  <Layout />
  * </GridLayout>
  */
