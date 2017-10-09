@@ -1,0 +1,56 @@
+{
+  "name": "px-accordion",
+  "version": "1.0.7",
+  "main": [
+    "px-accordion.html"
+  ],
+  "ignore": [
+    ".*",
+    "npm-debug.log",
+    "gulpfile.js",
+    "sass",
+    "bower_components",
+    "node_modules",
+    "test",
+    "OSS_Notice.pdf",
+    "scripts",
+    ".github",
+    "px-accordion.png",
+    "LICENSE.md",
+    "CONTRIBUTING.md",
+    "HISTORY.md",
+    "README.md",
+    ".jshintrc",
+    ".editorconfig",
+    "*.enc",
+    "package.json"
+  ],
+  "dependencies": {
+    "polymer": "^1.9.0",
+    "iron-collapse": "^2.0.0"
+  },
+  "devDependencies": {
+    "px-theme": "^3.0.0",
+    "px-layout-design": "^1.0.0",
+    "px-box-design": "^1.0.0",
+    "px-starter-kit-design": "^1.0.0",
+    "px-demo": "^2.0.0",
+    "px-actionable-text-icons-design": "^2.0.0",
+    "px-icon-set": "^2.0.0",
+    "px-headings-design": "^1.0.0"
+  },
+  "resolutions": {
+    "webcomponentsjs": "^0.7.24"
+  },
+  "homepage": "https://github.com/PredixDev/px-accordion",
+  "_release": "1.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.7",
+    "commit": "26629f6cc937e2184eb210d7dc2789f33a9d3e78"
+  },
+  "_source": "https://github.com/PredixDev/px-accordion.git",
+  "_target": "^1.0.7",
+  "_originalSource": "px-accordion",
+  "_direct": true
+}

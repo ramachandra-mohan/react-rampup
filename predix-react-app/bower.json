@@ -34,6 +34,7 @@
     "px-modal": "^2.0.5",
     "px-typeahead": "^2.0.7",
     "px-validation": "^1.0.5",
-    "px-context-browser": "^2.0.12"
+    "px-context-browser": "^2.0.12",
+    "px-accordion": "^1.0.7"
   }
 }
